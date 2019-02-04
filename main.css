@@ -1,0 +1,149 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-size:17px;
+    font-family: 'Righteous', cursive;
+    background-color: #fff;
+   
+}
+nav{
+    display:grid;
+    width:100%;
+    height:64px;
+    background: #fff;
+    box-shadow:2px 4px 6px rgba(0,0,0,0.1);
+    border-radius:2px;
+    position:fixed;
+    top:0;
+    z-index:2;
+    left:0;
+    /* grid-template-columns: 1fr 2fr; */
+}
+.container{
+    width:80%;
+    /* position: relative;
+    z-index:1; */
+    
+    margin:66px auto;
+    height:auto;
+    
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    width:100%;
+    position: relative;
+    bottom:0;
+    display: flex;
+    justify-content: space-around;
+    height:auto;
+    background:#2D0137;
+}
+.bgimg{
+    background-image:url('img/8457d3df4494cbe.jpg');
+    background-size:cover;
+    width:100%;
+    display:table;
+    background-attachment: fixed;
+    height:100vh;
+   
+}
+.menu{
+    display:none;
+}
+.nav_container{
+    display:flex;
+    justify-content: space-around;
+   
+}
+ul li a{
+    text-decoration: none;
+    color:#000;
+}
+ul{
+    width:100%;
+    margin:0 auto;
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+
+}
+.product_img{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+
+}
+ul .active{
+    background: #FF9900;
+    color:#fff !important;
+    border-radius:2px;
+}
+ul li:hover{
+    background: #FDA31D;
+    transition: .25s;
+    
+}
+.footer .container{
+    display: flex;
+
+}
+ul li a:hover{
+    color:#fff !important;
+}
+@media(max-width:780px){
+    ul{
+        width:100%;
+        
+    }
+    .nav_container{
+       flex-direction: column;
+       
+    }
+    .navigator{
+        background:#FF9900;
+        margin-top:0px;
+    }
+    ul li {
+        height:0;
+        text-align:center;
+    }
+    ul li a{
+        
+        color:#fff;
+    }
+    .text{
+        margin-top:100px !important;
+    }
+    .info{
+       flex-wrap: wrap;
+     
+      
+        
+    }
+    .media{
+        left: 0px;
+        top: 0px;
+        padding:10px;
+        width: 150px !important;
+        height: 150px !important;
+        position: relative;
+    }
+    .navigator{
+        display: none;
+    }
+    .menu{
+        display:block;
+    }
+    .footer .container{
+       flex-direction: column;
+       text-align: center;
+    
+    }
+}
